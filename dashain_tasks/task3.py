@@ -19,7 +19,7 @@ kites = ["red", "blue", "green"]
 kites.append("yellow")
 kites[0]="black"
 kites.sort()
-print(kites)
+
 print(kites[:2])
 print(f"How many?:{len(kites)}")
 print(f"have blue?:{"blue" in kites}")
@@ -27,3 +27,11 @@ print(f"have blue?:{"blue" in kites}")
 new = "pink,orange,white".split(",")
 kites.extend(new)
 print(" | ".join(kites))
+
+backup= kites.copy()
+kites.append("gold")
+print(backup)
+print(kites)
+
+prices = [["small", 50], ["big", 150]]
+print("Big kite price:", prices[1][1])
